@@ -34,7 +34,7 @@ def submit():
 def enviar_email(nome, telefone, email, assunto):
     remetente = os.getenv("EMAIL_USUARIO")
     senha = os.getenv("EMAIL_SENHA")
-    destinatario = remetente  # Pode ser outro, se quiser
+    destinatario = remetente 
 
     corpo = f"Nome: {nome}\nTelefone: {telefone}\nEmail: {email}\nAssunto: {assunto}"
     msg = MIMEText(corpo)
@@ -51,7 +51,7 @@ def salvar_em_planilha(nome, telefone, email, assunto):
     creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
     client = gspread.authorize(creds)
 
-    planilha = client.open("FormularioWeb").sheet1  # Nome da sua planilha
+    planilha = client.open("FormularioWeb").sheet1 
     planilha.append_row([nome, telefone, email, assunto])
 
 if __name__ == '__main__':
