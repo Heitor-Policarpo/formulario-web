@@ -4,14 +4,14 @@ Eu utilizei o Vs Code como editor de código e as tecnologias que utilizei para 
 Puxe o programa do github utilizando o comando git clone https://github.com/seu-usuario/formulario-web.git dentro do seu editor de código. 
 É necessario criar um ambiente virtual e baixar as blibliotecas, então use o comando abaixo no terminal para o baixar as blibliotecas;
 
-pip install flask
-pip install dotenv
-pip install gspread
-pip install oauth2client
+pip install flask;
+pip install dotenv;
+pip install gspread;
+pip install oauth2client.
 
 É necessário criar um google shets com o nome "FormularioWeb".
 Troque os nomes do arquivo .env para o nome do seu email e uma senha temporária apenas para essa aplicação no site "https://myaccount.google.com/apppasswords", é necessario ter ativada a verificação de duas etapas na sua conta google.
-Coloque o arquivo "credentials.json" da conta de serviço do Google na raiz do projeto. Aqui está como criar esse arquivo "https://docs.gspread.org/en/latest/oauth2.html#for-bots-using-service-account"
+É necessario criar o arquivo "credentials.json" da conta de serviço do Google na raiz do projeto. Aqui está como criar esse arquivo "https://docs.gspread.org/en/latest/oauth2.html#for-bots-using-service-account", nesse passo a passo ao final você recebera um arquivo json, troque o nome dele para ele ficar "credentials.json" e adicione ele na raiz do projeto.
 
 Com esses passos feitos, é só compartilhar o google sheets com o e-mail que está no arquivo "credentials.json" e dê permisão de editor a esse e-mail.
 
