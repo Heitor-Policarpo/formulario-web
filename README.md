@@ -2,7 +2,7 @@ Esse projeto é formulário web simples que permite ao usuário preencher: Nome,
 Eu utilizei o Vs Code como editor de código e as tecnologias que utilizei para fazer esse programa  foram Python (Flask), HTML + CSS , google Sheets API, Email (via SMTP), gspread e python-dotenv.
 
 Puxe o programa do github utilizando o comando git clone https://github.com/seu-usuario/formulario-web.git dentro do seu editor de código. 
-É necessario baixar as blibliotecas, então use o comando abaixo no terminal para o programa funcionar;
+É necessario criar um ambiente virtual e baixar as blibliotecas, então use o comando abaixo no terminal para o baixar as blibliotecas;
 
 pip install flask
 pip install dotenv
