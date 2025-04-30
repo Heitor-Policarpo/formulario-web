@@ -1,13 +1,22 @@
 Esse projeto é formulário web simples que permite ao usuário preencher: Nome, telefone, email e assunto. As informações são enviadas por email para um destinatário configurado e registradas automaticamente em uma Google Sheet via API
 Eu utilizei o Vs Code como editor de código e as tecnologias que utilizei para fazer esse programa  foram Python (Flask), HTML + CSS , google Sheets API, Email (via SMTP), gspread e python-dotenv.
 
-Puxe o programa do github utilizando o comando git clone https://github.com/seu-usuario/formulario-web.git dentro do seu editor de código. 
-É necessario criar um ambiente virtual e baixar as blibliotecas, então use o comando abaixo no terminal para o baixar as blibliotecas;
+Puxe o programa do github utilizando o comando "git clone https://github.com/seu-usuario/formulario-web.git" dentro do seu editor de código. 
+É necessario criar um ambiente virtual:
+Para windows o comando é:
+"python -m venv venv
+venv\Scripts\activate"
 
-pip install flask;
-pip install dotenv;
-pip install gspread;
-pip install oauth2client.
+Para linux/mac o comando é:
+"python3 -m venv venv
+source venv/bin/activate"
+
+Para baixar as bibliotecas o comando é "pip install -r requirements.txt", caso não dê certo esses são os comandos para baixar cada uma manualmente:
+
+"pip install flask";
+"pip install dotenv";
+"pip install gspread";
+"pip install oauth2client".
 
 É necessário criar um google shets com o nome "FormularioWeb".
 Troque os nomes do arquivo .env para o nome do seu email e uma senha temporária apenas para essa aplicação no site "https://myaccount.google.com/apppasswords", é necessario ter ativada a verificação de duas etapas na sua conta google.
